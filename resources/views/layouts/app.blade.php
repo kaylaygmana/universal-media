@@ -32,7 +32,6 @@
         'resources/css/owl.theme.default.css',
         'resources/css/style_1.css',
         'resources/js/modernizr-3.5.0.min.js',
-        'resources/js/jquery.min.js',
         'resources/js/app.js'
     ])
 
