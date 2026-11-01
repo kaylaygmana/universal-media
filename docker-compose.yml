@@ -6,11 +6,16 @@ services:
     container_name: universal-media-app
     restart: unless-stopped
     ports:
-      - "${APP_PORT:-8001}:80"
+      - "${APP_PORT:-8002}:80"
     env_file:
       - .env
     volumes:
       # uploaded photos live in ./storage/app/public on the host (persist across rebuilds)
       - ./storage/app:/var/www/html/storage/app
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
+    networks:
+      - kref-network
+
+networks:
+  kref-network:
+    external: true
+    name: kref-barber_kref-network
