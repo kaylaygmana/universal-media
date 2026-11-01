@@ -7,9 +7,11 @@ return new class extends Migration {
     
 public function up()
 {
-    Schema::table('beritas', function (Blueprint $table) {
-        $table->string('slug')->unique()->after('judul');
-    });
+    if (!Schema::hasColumn('beritas', 'slug')) {
+        Schema::table('beritas', function (Blueprint $table) {
+            $table->string('slug')->unique()->after('judul');
+        });
+    }
 }
 
 
