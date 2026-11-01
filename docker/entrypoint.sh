@@ -10,12 +10,15 @@ chmod -R 775 storage bootstrap/cache
 php artisan storage:link || true
 
 php artisan config:cache || true
-php artisan route:cache || true
 php artisan view:cache || true
 
 # Disable by setting SKIP_MIGRATIONS=true
 if [ "${SKIP_MIGRATIONS}" != "true" ]; then
     php artisan migrate --force || true
 fi
+
+# Re-apply ownership after artisan commands (so logs/cache created by root are writable by www-data)
+chown -R www-data:www-data storage bootstrap/cache
+chmod -R 775 storage bootstrap/cache
 
 exec "$@"
