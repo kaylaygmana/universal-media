@@ -17,8 +17,8 @@ services:
       DB_USERNAME: ${MYSQL_APP_USER:-universal}
       DB_PASSWORD: ${MYSQL_APP_PASSWORD:-secret}
     volumes:
-      # uploaded photos live in ./storage-data/public on the host (persist across rebuilds)
-      - ./storage-data:/var/www/html/storage/app
+      # uploaded photos live in ./storage/app/public on the host (persist across rebuilds)
+      - ./storage/app:/var/www/html/storage/app
     depends_on:
       mysql:
         condition: service_healthy
