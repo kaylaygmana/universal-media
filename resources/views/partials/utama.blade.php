@@ -193,6 +193,7 @@
     <div class="row g-1">
         {{-- Berita Utama --}}
         <div class="col-lg-6 col-md-12">
+            @if($beritaUtama)
             <a href="{{ route('berita.show', $beritaUtama->slug) }}">
                 <div class="fh5co_suceefh5co_height hover-zoom position-relative" style="overflow: hidden;">
 
@@ -213,6 +214,7 @@
 
                 </div>
             </a>
+            @endif
         </div>
 
         {{-- Berita Kecil 2x2 --}}
@@ -285,6 +287,7 @@
             <div id="carouselBerita" class="carousel slide mb-4" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     @foreach([$berita1, $berita2, $berita3] as $index => $berita)
+                        @if($berita)
                         <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
                             <a href="{{ route('berita.show', $berita->slug) }}">
                                 <img src="{{ $berita->foto ? asset('storage/' . $berita->foto) : 'https://via.placeholder.com/800x400' }}"
@@ -299,6 +302,7 @@
                                 </div>
                             </a>
                         </div>
+                        @endif
                     @endforeach
                 </div>
 
