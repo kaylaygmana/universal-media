@@ -69,20 +69,21 @@
         }
 
         .berau-header {
-            width: 100vw !important;
-            max-width: none !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            overflow: hidden;
+            width: 100%;
+            max-width: 1140px;
+            margin: 0 auto 10px auto;
+            padding: 0 15px;
+            text-align: center;
         }
 
         .berau-header img {
-            width: 100vw !important;
-            max-width: none !important;
+            width: 100%;
+            max-height: 280px;
+            object-fit: contain;
             height: auto;
             display: block;
-            margin: 0 !important;
-            padding: 0 !important;
+            margin: 0 auto;
+            border-radius: 6px;
         }
 
         /* Navbar sticky: mengikuti alur dokumen (di bawah banner),
