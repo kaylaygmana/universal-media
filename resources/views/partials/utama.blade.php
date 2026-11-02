@@ -147,15 +147,31 @@
     object-fit: cover;
 }
 
-/* Untuk mobile, crop lebih proporsional */
-@media (max-width: 576px) {
+/* Untuk mobile, gambar berita utama penuh tanpa terpotong */
+@media (max-width: 767px) {
+    .fh5co_suceefh5co_height {
+        aspect-ratio: auto !important;
+        height: auto !important;
+    }
+
     .fh5co_suceefh5co_height img {
-        height: 250px; /* tinggi lebih kecil di HP */
-        object-fit: cover;
+        width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
+        display: block;
+    }
+
+    .fh5co_suceefh5co_height_position_absolute_font {
+        top: auto !important;
+        bottom: 12px;
+        left: 0 !important;
+        height: auto !important;
+        padding: 0 15px !important;
     }
 
     .bold-title {
-        font-size: 1.2rem; /* judul lebih kecil di HP */
+        font-size: 1.1rem;
+        margin-right: 0;
     }
 }
 /* Pagination normal */
