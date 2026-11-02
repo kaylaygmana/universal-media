@@ -64,6 +64,10 @@
     <div class="container py-2 text-center">
         <img src="{{ asset('images/logouniversal.png') }}" alt="Universal Media" width="300" class="img-fluid">
     </div>
+    <!-- BANNER -->
+    <header class="berau-header">
+        <img src="{{ asset('images/bontang-banner.jpeg') }}" alt="Pemerintah Kabupaten Berau">
+    </header>
 
   <!-- NAVBAR RESPONSIVE -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
