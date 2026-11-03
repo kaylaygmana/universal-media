@@ -133,33 +133,90 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse justify-content-center" id="navbarUniversal">
-                <ul class="navbar-nav mx-auto text-center">
-                    <li class="nav-item">
-                        <a class="nav-link px-3" href="/">Beranda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3" href="{{ route('kategori.show', ['kategori' => 'kriminalitas']) }}">Kriminal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3" href="{{ route('kategori.show', ['kategori' => 'evergreen']) }}">Evergreen</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3" href="{{ route('kategori.show', ['kategori' => 'pemerintahan']) }}">Pemerintahan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3" href="{{ route('kategori.show', ['kategori' => 'olahraga']) }}">Olahraga</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3" href="{{ route('kategori.show', ['kategori' => 'lifestyle']) }}">Lifestyle</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3" href="{{ route('kategori.show', ['kategori' => 'Daerah']) }}">Daerah</a>
-                    </li>
-                </ul>
-            </div>
+        <!-- MENU -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarUniversal">
+            <ul class="navbar-nav mx-auto text-center">
+
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="/">Beranda</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="{{ route('kategori.show', ['kategori' => 'kriminalitas']) }}">
+                        Kriminal
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="{{ route('kategori.show', ['kategori' => 'evergreen']) }}">
+                        Evergreen
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="{{ route('kategori.show', ['kategori' => 'pemerintahan']) }}">
+                        Pemerintahan
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="{{ route('kategori.show', ['kategori' => 'olahraga']) }}">
+                        Olahraga
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="{{ route('kategori.show', ['kategori' => 'lifestyle']) }}">
+                        Lifestyle
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="{{ route('kategori.show', ['kategori' => 'Daerah']) }}">
+                        Daerah
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle px-3"
+                    href="#"
+                    id="advertorialDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                        Advertorial
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="advertorialDropdown">
+                        <li>
+                            <a class="dropdown-item"
+                            href="{{ route('kategori.show', ['kategori' => 'Advertorial Bontang']) }}">
+                                Bontang
+                            </a>
+                        </li>
+
+                        {{-- <li>
+                            <a class="dropdown-item"
+                            href="{{ route('kategori.show', ['kategori' => 'Advertorial Samarinda']) }}">
+                                Samarinda
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item"
+                            href="{{ route('kategori.show', ['kategori' => 'Advertorial Kutai Kartanegara']) }}">
+                                Kutai Kartanegara
+                            </a> --}}
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
         </div>
-    </nav>
+
+    </div>
+</nav>
+
 </div>
 
 <main class="container mt-5">

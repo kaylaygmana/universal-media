@@ -36,6 +36,13 @@
                         <option value="Evergreen">Evergreen</option>
                         <option value="Daerah">Daerah</option>
                         <option value="Peristiwa">Peristiwa</option>
+
+                            <optgroup label="Advertorial">
+                                <option value="Advertorial Bontang">Bontang</option>
+                                <option value="Advertorial Samarinda">Samarinda</option>
+                                <option value="Advertorial Kutai Kartanegara">Kutai Kartanegara</option>
+                            </optgroup>
+
                     </select>
                 </div>
 
