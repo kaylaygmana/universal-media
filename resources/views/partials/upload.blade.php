@@ -39,8 +39,6 @@
 
                             <optgroup label="Advertorial">
                                 <option value="Advertorial Bontang">Bontang</option>
-                                <option value="Advertorial Samarinda">Samarinda</option>
-                                <option value="Advertorial Kutai Kartanegara">Kutai Kartanegara</option>
                             </optgroup>
 
                     </select>
@@ -106,7 +104,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @forelse($beritas as $index => $berita)
+                   @forelse($beritas->sortByDesc('id')->values() as $index => $berita)
                     <tr>
                         <td class="text-center">{{ $index + 1 }}</td>
                         <td>{{ $berita->judul }}</td>

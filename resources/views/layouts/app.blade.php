@@ -6,6 +6,7 @@
 <html lang="en" class="no-js">
 <head>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ME9L3JN80C"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
@@ -177,40 +178,41 @@
                     </a>
                 </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle px-3"
-                    href="#"
-                    id="advertorialDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                        Advertorial
-                    </a>
+               <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle px-3"
+       href="#"
+       id="advertorialDropdown"
+       role="button"
+       data-bs-toggle="dropdown"
+       aria-expanded="false">
+        Advertorial
+    </a>
 
-                    <ul class="dropdown-menu" aria-labelledby="advertorialDropdown">
-                        <li>
-                            <a class="dropdown-item"
-                            href="{{ route('kategori.show', ['kategori' => 'Advertorial Bontang']) }}">
-                                Bontang
-                            </a>
-                        </li>
+    <ul class="dropdown-menu" aria-labelledby="advertorialDropdown">
+        <li>
+            <a class="dropdown-item"
+               href="{{ route('kategori.show', ['kategori' => 'Advertorial Bontang']) }}">
+                Bontang
+            </a>
+        </li>
 
-                        {{-- <li>
-                            <a class="dropdown-item"
-                            href="{{ route('kategori.show', ['kategori' => 'Advertorial Samarinda']) }}">
-                                Samarinda
-                            </a>
-                        </li>
+        {{-- 
+        <li>
+            <a class="dropdown-item"
+               href="{{ route('kategori.show', ['kategori' => 'Advertorial Samarinda']) }}">
+                Samarinda
+            </a>
+        </li>
 
-                        <li>
-                            <a class="dropdown-item"
-                            href="{{ route('kategori.show', ['kategori' => 'Advertorial Kutai Kartanegara']) }}">
-                                Kutai Kartanegara
-                            </a> --}}
-                        </li>
-                    </ul>
-                </li>
-
+        <li>
+            <a class="dropdown-item"
+               href="{{ route('kategori.show', ['kategori' => 'Advertorial Kutai Kartanegara']) }}">
+                Kutai Kartanegara
+            </a>
+        </li>
+        --}}
+    </ul>
+</li>
             </ul>
         </div>
 

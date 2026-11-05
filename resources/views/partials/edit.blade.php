@@ -34,13 +34,35 @@
 
         {{-- Kategori --}}
         <div class="mb-3">
-            <label class="form-label">Kategori</label>
+            <label class="form-label">Kategori Lama</label>
             <input type="text" 
                    name="kategori" 
                    class="form-control"
                    value="{{ old('kategori', $berita->kategori) }}" 
                    required>
         </div>
+
+          <div class="mb-3">
+                    <label class="form-label">Kategori Baru </label>
+                    <select name="kategori" class="form-select" required>
+                        <option value="">-- Pilih Kategori --</option>
+                        <option value="Pemerintahan">Pemerintahan</option>
+                        <option value="Olahraga">Olahraga</option>
+                        <option value="Lifestyle">Lifestyle</option>
+                        <option value="Kriminalitas">Kriminalitas</option>
+                        <option value="Evergreen">Evergreen</option>
+                        <option value="Daerah">Daerah</option>
+                        <option value="Peristiwa">Peristiwa</option>
+
+                            <optgroup label="Advertorial">
+                                <option value="Advertorial Bontang">Bontang</option>
+                                {{-- <option value="Advertorial Samarinda">Samarinda</option>
+                                <option value="Advertorial Kutai Kartanegara">Kutai Kartanegara</option> --}}
+                            </optgroup>
+
+                    </select>
+                </div>
+
 
         {{-- Tanggal --}}
         <div class="mb-3">
